@@ -18,7 +18,7 @@ const UptimeItem = (props) => {
 
   const total = useMemo(() => {
     return monitor.total.times
-      ? `outages in the last ${CountDays} days: ${monitor.total.times}，total downtime: ${formatDuration(monitor.total.duration)}，average uptime: ${monitor.average}%`
+      ? `outages in the last ${CountDays} days: ${monitor.total.times} | total downtime: ${formatDuration(monitor.total.duration)} | average uptime: ${monitor.average}%`
       : `uptime in the last ${CountDays} days: ${monitor.average}%`;
   }, [CountDays, monitor]);
 
