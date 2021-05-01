@@ -2,7 +2,7 @@
 window.Config = {
 
   // 站点名
-  SiteName: 'Uptime Status',
+  SiteName: 'uptime status',
 
   // 站点链接
   SiteUrl: '/',
@@ -16,10 +16,10 @@ window.Config = {
   // UptimeRobot Api Keys
   // 支持 Monitor-Specific 和 Read-Only 两只 Api Key
   ApiKeys: [
-    'm784488775-dd1ad84b209c05f8e185c33e',
-    'm784490063-7b5da437e7f1e0d67613714d',
-    'm784497419-de55aa09902ccb3ab22d548a',
-    'm784496436-71a4bf7b1e3bdf7756be131b',
+    'm787057886-564a4e8804e949cbd153dfc7',
+    'm787498548-1eea93a149c45ce2e4c4d34f',
+    'm787701639-4ec42fedc2d43e9d790cd54f',
+    'm787057889-2b803251c9316e7843b8564a',
   ],
 
   // 是否显示监测站点的链接
@@ -33,12 +33,8 @@ window.Config = {
   // 导航栏菜单
   Navi: [
     {
-      text: 'Homepage',
-      url: 'https://status.org.cn/'
-    },
-    {
-      text: 'GitHub',
-      url: 'https://github.com/yb/uptime-status'
+      text: 'homepage',
+      url: 'https://lukgth.cloud'
     }
   ]
 };
