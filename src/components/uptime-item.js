@@ -44,7 +44,7 @@ const UptimeItem = (props) => {
       <div className="foot">
         <span>today</span>
         <span>{total}</span>
-        <span>{initial.format('YYYY-MM-DD')}</span>
+        <span>{initial.format('DD-MM-YYYY')}</span>
       </div>
     </div>
   );
