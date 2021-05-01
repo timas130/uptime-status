@@ -6,18 +6,18 @@ const UptimeBlock = (props) => {
   const { data } = props;
   const { status, text } = useMemo(() => {
     let status = '';
-    let text = data.date.format('YYYY-MM-DD');
+    let text = data.date.format('DD-MM-YYYY');
     if (data.uptime >= 100) {
       status = 'ok';
-      text += ` 可用率 ${fixed(data.uptime)}%`;
+      text += ` uptime: ${fixed(data.uptime)}%`;
     }
     else if (data.uptime <= 0 && data.down.times === 0) {
       status = 'none';
-      text += ' 无数据';
+      text += ' no data';
     }
     else {
       status = 'down';
-      text += ` 故障 ${data.down.times} 次，累计 ${formatDuration(data.down.duration)}，可用率 ${fixed(data.uptime)}%`;
+      text += ` outages: ${data.down.times}，down since ${formatDuration(data.down.duration)}，uptime: ${fixed(data.uptime)}%`;
     }
     return { status, text };
   }, [data]);
