@@ -42,7 +42,7 @@ const UptimeItem = (props) => {
       </div>
       <ReactTooltip className="tooltip" place="top" type="dark" effect="solid" />
       <div className="foot">
-        <span>今天</span>
+        <span>today</span>
         <span>{total}</span>
         <span>{initial.format('YYYY-MM-DD')}</span>
       </div>
