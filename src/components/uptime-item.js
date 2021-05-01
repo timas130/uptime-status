@@ -11,15 +11,15 @@ const UptimeItem = (props) => {
   const { monitor } = props;
 
   const status = {
-    ok: '正常',
-    down: '无法访问',
-    unknow: '未知'
+    ok: 'up',
+    down: 'down',
+    unknow: 'unknown'
   };
 
   const total = useMemo(() => {
     return monitor.total.times
-      ? `最近 ${CountDays} 天故障 ${monitor.total.times} 次，累计 ${formatDuration(monitor.total.duration)}，平均可用率 ${monitor.average}%`
-      : `最近 ${CountDays} 天可用率 ${monitor.average}%`;
+      ? `outages in the last ${CountDays} days: ${monitor.total.times}，total downtime: ${formatDuration(monitor.total.duration)}，average uptime: ${monitor.average}%`
+      : `uptime in the last ${CountDays} days: ${monitor.average}%`;
   }, [CountDays, monitor]);
 
   const initial = useMemo(() => {
