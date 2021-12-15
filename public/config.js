@@ -2,7 +2,7 @@
 window.Config = {
 
   // 站点名
-  SiteName: 'uptime status',
+  SiteName: 'sit\'s services',
 
   // 站点链接
   SiteUrl: '/',
@@ -11,14 +11,12 @@ window.Config = {
   // 只需填写域名部分，默认为官网域名
   // 因官网 API 时不时的会 CROS 报错，可填自定义反代域名
   // 详见 https://github.com/yb/uptime-status/ 说明
-  ApiDomain: 'api.uptimerobot.com',
+  ApiDomain: 'uptimerobot.sit33.workers.dev',
 
   // UptimeRobot Api Keys
   // 支持 Monitor-Specific 和 Read-Only 两只 Api Key
   ApiKeys: [
-    'm787057886-564a4e8804e949cbd153dfc7',
-    'm787701639-4ec42fedc2d43e9d790cd54f',
-    'm787057889-2b803251c9316e7843b8564a',
+    'ur1378940-99202a30dc2f58788cfc1cba'
   ],
 
   // 是否显示监测站点的链接
@@ -32,8 +30,12 @@ window.Config = {
   // 导航栏菜单
   Navi: [
     {
-      text: 'homepage',
-      url: 'https://lukgth.cloud'
+      text: 'home',
+      url: 'https://33rd.dev',
+    },
+    {
+      text: 'cweb',
+      url: 'https://camp.33rd.dev',
     }
   ]
 };
